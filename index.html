@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Chatapp!</title>
+		<link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+
+	<div class="chat-wrapper">
+		<div class="chat-app d-flex">
+			<div class="d-flex w-100">
+				<div class="row w-100 no-gutters">
+					<div class="col-sm-6 col-md-4 sidebar">
+						<div class="topbar d-flex align-items-center">
+							<div class="user-image-container d-table-cell">
+								<img src="./assets/images/razvan.jpg" alt="Your profile" title="Your profile" class="rounded-circle">
+							</div>
+							<div class="my-menu ml-auto">
+								<a href="#" class="text-secondary" data-toggle="dropdown" title="Actions">
+									<i class="fa fa-ellipsis-v"></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right p-0 menu-with-icons">
+									<a class="dropdown-item d-flex align-items-center" href="#">
+										<span class="link-text">Edit your profile</span>
+										<span class="link-icon fa fa-pencil ml-auto"></span>
+									</a>
+									<a class="dropdown-item d-flex align-items-center" href="#">
+										<span class="link-text">Log out</span>
+										<span class="link-icon fa fa-sign-out ml-auto"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="search-box">
+							<form class="d-flex" action="">
+								<button class="search-button text-muted">
+									<i class="fa fa-search"></i>            
+								</button>
+								<input type="text" placeholder="Find people" class="search-field w-100">
+							</form>
+						</div>
+						<div id="users">
+							<ul class="list-unstyled m-0 users-list d-table w-100">
+								<li class="d-table-row w-100 active">
+									<div class="user-image-container user-online d-table-cell">
+										<img src="./assets/images/carmen.jpg" alt="Carmen Romaguera" class="rounded-circle">
+									</div>
+									<div class="text d-table-cell">
+										<span class="time text-muted">12:12</span>
+										<h3 class="display-name m-0">Carmen Romaguera</h3>
+										<p class="m-0 text-muted">Lorem ipsum dolor</p>
+									</div>
+								</li>
+								<li class="d-table-row w-100">
+									<div class="user-image-container d-table-cell">
+										<img src="./assets/images/kayden.jpg" alt="Carmen Romaguera" class="rounded-circle">
+									</div>
+									<div class="text d-table-cell">
+										<span class="time text-muted">12:12</span>
+										<h3 class="display-name m-0">Kayden Schiller</h3>
+										<p class="m-0 text-muted">Lorem ipsum dolor</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-8 d-flex flex-column main">
+						<div class="topbar d-flex align-items-center">
+							<div class="d-table">
+								<div class="d-table-row w-100">
+									<div class="user-image-container d-table-cell">
+										<img src="./assets/images/carmen.jpg" alt="Carmen Romaguera" class="rounded-circle">
+									</div>
+									<div class="text d-table-cell pl-2">
+										<h3 class="display-name text-dark m-0">Carmen Romaguera</h3>
+										<small class="badge badge-success">Online</small>
+									</div>
+								</div>
+							</div>
+							<div class="my-menu ml-auto">
+								<a href="#" class="text-secondary" data-toggle="dropdown" title="Actions">
+									<i class="fa fa-ellipsis-v"></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right p-0 menu-with-icons">
+									<a class="dropdown-item d-flex align-items-center" href="#">
+										<span class="link-text">See user details</span>
+										<span class="link-icon fa fa-info-circle ml-auto"></span>
+									</a>
+									<a class="dropdown-item d-flex align-items-center" href="#">
+										<span class="link-text">Block user</span>
+										<span class="link-icon fa fa-ban ml-auto"></span>
+									</a>
+									<a class="dropdown-item d-flex align-items-center" href="#">
+										<span class="link-text">Delete user</span>
+										<span class="link-icon fa fa-trash ml-auto"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+	
+						<div id="chat" class="messages-container p-4">
+							<div class="message text-left">            
+								<div class="d-inline-block bubble text-left">
+									<small class="text-dark text-bold">Razvan Zamfir</small>
+									<small class="text-muted pull-right date-time">March 19, 12:12</small>
+									<p class="m-0 pt-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed officia ratione aliquam earum quibusdam libero rerum, iusto exercitationem reiciendis illo corporis nulla ducimus suscipit nisi dolore explicabo asperiores soluta, tenetur.</p>
+									<div class="user-image-container">
+										<img src="./assets/images/razvan.jpg" alt="Razvan Zamfir" class="rounded-circle">
+									</div>
+								</div>
+							</div>
+	
+							<div class="message text-right">
+								<div class="d-inline-block bubble text-left">
+									<small class="text-dark text-bold">Carmen Romaguera</small>
+									<small class="text-muted pull-right date-time">March 19, 12:12</small>
+									<p class="m-0 pt-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed officia ratione aliquam earum quibusdam libero rerum.</p>
+									<div class="user-image-container">
+										<img src="./assets/images/carmen.jpg" alt="Carmen Romaguera" class="rounded-circle">
+									</div> 
+								</div>
+							</div>
+	
+							<div class="message text-left"> 
+								<div class="d-inline-block bubble text-left">
+									<small class="text-dark text-bold">Razvan Zamfir</small>
+									<small class="text-muted pull-right date-time">March 19, 12:12</small>
+									<p class="m-0 pt-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed officia ratione aliquam earum quibusdam libero rerum, iusto exercitationem reiciendis illo corporis nulla ducimus suscipit nisi dolore explicabo asperiores soluta, tenetur.</p>
+									<div class="user-image-container">
+										<img src="./assets/images/razvan.jpg" alt="Razvan Zamfir" class="rounded-circle">
+									</div>
+								</div>
+							</div>
+	
+							<div class="message text-right">
+								<div class="d-inline-block bubble text-left">
+									<small class="text-dark text-bold">Carmen Romaguera</small>
+									<small class="text-muted pull-right date-time">March 19, 12:12</small>
+									<p class="m-0 pt-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<div class="user-image-container">
+										<img src="./assets/images/carmen.jpg" alt="Carmen Romaguera" class="rounded-circle">
+									</div> 
+								</div>
+							</div>
+						</div>
+						<div class="chat-box w-100 mt-auto">
+							<form class="d-flex" action="" method="POST">
+								<input type="text" class="chat-field">
+								<button id="send_button" class="chat-button text-muted">
+									<i class="fa fa-paper-plane"></i>         
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> 
+
+	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>
