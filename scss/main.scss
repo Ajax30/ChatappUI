@@ -4,6 +4,12 @@
 @import '../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 
+$theme-colors: (
+  "primary": #007de1,
+  "danger": #e43f50,
+  "success": #2a9e6c,
+);
+
 /* Bootstrap */
 @import 'vendor/bootstrap.scss';
 
@@ -13,7 +19,7 @@
 /* variables */
 @import '_variables.scss';
   
-  body {
+  body.chat {
     background: $blue;
   }
   
